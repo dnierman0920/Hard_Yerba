@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: repeat;
+  background-image:url("https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/360527092/blueberries-close-up.jpg?resize=640%2C360&ssl=1");
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  background-color:white;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  position: sticky;
+  top:10%;
+  padding-top: 4vh;
+  padding-bottom: 1vh;
+  border: .4vh solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+  z-index:-1;
+}
+
+
+.question-container 
+{
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  margin: 10px;
+}
+
+.question {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  order: 1;
+  color:black;
+  flex-grow: 1;
+  flex-basis: 1;
+  margin: 10px;
+  text-align: center;
+  line-height: 9vh;
+  font-size: 100%;
+}
+
+.answer-container 
+{
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  width: 80%;
+
+}
+
+.yes {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  order: 1;
+  align-self: flex-end;
+  color:black;
+  margin: 10px;
+  text-align: center;
+  line-height: 6vh;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 10%;
+}
+
+.yes:hover,.no:hover{
+	color: green;
+
+}
+
+.no {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  order: 1;
+  align-self: flex-end;
+  color:black;
+  margin: 10px;
+  text-align: center;
+  line-height: 6vh;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 10%;
+}
+
+
+.gap {
+  height: 2000px;
+}
+
+
+
+</style>
+</head>
+<body onload="myFunction()">
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <div class = "question-container">
+			<div class = "question">
+			ARE YOU 21 YEARS OR OLDER?
+   			</div>
+   		</div>
+   		<div class = "answer-container">
+			<div class = "yes">YES
+			</div>
+			<div class = "no">NO
+			</div>
+		</div>	
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+function myFunction() {
+  modal.style.display = "block";
+}
+
+</script>
+<div class = "gap"></div>
+</body>
+</html>
